@@ -1,0 +1,4 @@
+<div class="login_logout">
+    <button *ngIf="authService.currentUser == null" (click)="authService.loginWithGoogle()"><b>Login with google</b></button>
+    <button *ngIf="authService.currentUser != null" (click)="authService.logout()"><b>log out</b></button>
+</div>

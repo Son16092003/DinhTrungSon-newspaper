@@ -1,0 +1,17 @@
+<div class="container">
+    <mat-toolbar color="primary">
+        <mat-icon  class="icon">menu</mat-icon>
+            <p class="item-navbar"><b>Read The Newspaper</b></p>
+        <div class="box">
+          <a (click)="goHome()" mat-button>Home</a>
+          <a (click)="goLogin()"mat-button>login</a>
+          <a (click)="goLogout()" mat-button>logout</a>
+        </div> 
+        <img *ngIf="authService.currentUser" [src]="authService.currentUser?.photoURL"  alt=""> 
+        <p class="UserName" *ngIf="authService.currentUser">{{ authService.currentUser?.displayName }}</p>
+    </mat-toolbar>
+</div>
+
+
+
+

@@ -1,0 +1,37 @@
+.item-navbar{
+    width: 1200px;
+    margin-bottom: 0; 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.box{
+    // width: 500px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+
+.icon{
+    width: 40px;
+    
+}
+
+img{
+    width: 40px;
+    height: 5\40px;
+    border-radius: 40px;
+}
+
+.UserName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}

@@ -1,0 +1,42 @@
+<div class="container" *ngIf="new$ | async">
+    <div class="content" *ngFor="let news of (new$ | async)?.articles">
+      <!-- <p><b>{{ news.author == null ? 'There is no author' : news.author }}</b></p> -->
+      <p>{{ news.type_of }}</p>
+      <p>{{ news.id }}</p>
+      <p>{{ news.title }}</p>
+      <p>{{ news.description }}</p>
+      <p>{{ news.readable_publish_date }}</p>
+      <p>{{ news.slug }}</p>
+      <img {{ news.path }}>
+      <img {{ news.url }}>
+      <p>{{ news.comments_count }}</p>
+      <p>{{ news.public_reactions_count }}</p>
+      <p>{{ news.collection_id }}</p>
+      <p>{{ news.published_timestamp }}</p>
+      <p>{{ news.positive_reactions_count }}</p>
+      <img {{ news.cover_image }}>
+      <img {{ news.social_image }}>
+      <img {{ news.canonical_url }}>
+      <p>{{ news.created_at }}</p>
+      <p>{{ news.edited_at }}</p>
+      <p>{{ news.crossposted_at }}</p>
+      <p>{{ news.published_at }}</p>
+      <p>{{ news.last_comment_at }}</p>
+      <p>{{ news.reading_time_minutes }}</p>
+      <p>{{ news.tag_list }}</p>
+      <p>{{ news.tags }}</p>
+      <p>{{ news.user }}</p>
+      <p>{{ news.user.name }}</p>
+      <p>{{ news.user.username }}</p>
+      <p>{{ news.user.twitter_username }}</p>
+      <p>{{ news.user.github_username }}</p>
+      <p>{{ news.user.website_url }}</p>
+      <img {{ news.profile_image }}>
+      <img {{ news.profile_image_90 }}>
+
+      <div class="btn">
+        <button mat-button>Share</button>
+        <button mat-button>Like</button>
+      </div>
+    </div>
+</div>
